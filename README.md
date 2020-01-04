@@ -4,9 +4,10 @@ HairbyProgress is an e-commerce App highly flexible and bendable for selling hai
 
 This is the full source for code for the App "Hair by Progress" on Google Play Store https://play.google.com/store/apps/details?id=com.hairbyprogress
 
-<img src="screenshots/Screenshot_20200104-202456.png" width="33%" /> <img src="assets/screenshots/Screenshot_20200104-202407.png" width="33%" /> <img src="assets/screenshots/Screenshot_20200104-202419.png" width="33%" />
 
-<img src="assets/screenshots/Screenshot_20200104-202430.png" width="33%" /> <img src="assets/screenshots/Screenshot_20200104-202436.png" width="33%" /> <img src="assets/screenshots/Screenshot_20200104-202443.png" width="33%" />
+<img src="assets/screenshots/s1.png" width="33%" /> <img src="assets/screenshots/s2.png" width="33%" /> <img src="assets/screenshots/s3.png" width="33%" />
+
+<img src="assets/screenshots/s4.png" width="33%" /> <img src="assets/screenshots/s5.png" width="33%" /> <img src="assets/screenshots/s6.png" width="33%" />
 
 
 ## How To Use
