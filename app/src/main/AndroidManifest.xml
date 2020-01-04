@@ -29,10 +29,7 @@
                 android:resource="@xml/provider_paths"/>
         </provider>
 
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCGR32-YAHIEgTE9Bzc3OBPdrfdH85L8Lk" />
-
+       
         <activity android:name=".PreInit"
 
             >
