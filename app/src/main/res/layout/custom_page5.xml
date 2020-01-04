@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:ignore="MissingPrefix">
+
+    <TextView
+        fontPath = "fonts/NirmalaB.ttf"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/customized_color_optional"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upload_a_photo_of_what_the_hair_should_look_like"
+                android:textSize="12sp"
+                android:alpha=".5"
+                android:textColor="@color/black"
+                />
+
+            <me.xiaopan.sketch.SketchImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_top_vp"
+                android:background="@color/default_white"
+                android:layout_marginTop="10dp"
+                android:id="@+id/imv"
+                />
+
+            <LinearLayout
+                android:padding="10dp"
+                android:background="@color/brown0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/ic_about"
+                    android:tint="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    />
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:alpha=".7"
+                    android:textColor="@color/white"
+                    android:id="@+id/fee_tv"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:focusable="true"
+                android:clickable="true"
+                android:background="@drawable/black_stoke_button"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="@string/upload_photo"
+                android:textColor="@color/brown03"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                fontPath = "fonts/NirmalaB.ttf"
+                android:id="@+id/select_photo"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

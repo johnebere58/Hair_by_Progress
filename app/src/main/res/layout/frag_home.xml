@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingPrefix"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <LinearLayout
+        android:background="@color/brown0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Hair by Progress"
+            android:textColor="@color/white"
+            fontPath = "fonts/NirmalaB.ttf"
+            android:textSize="17sp"
+            />
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/curve_brown_1"
+            android:layout_marginBottom="20dp"
+            >
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:tint="@color/white"
+                android:src="@drawable/ic_search"
+                android:layout_marginLeft="15dp"
+                />
+            <TextView
+                android:id="@+id/search_but"
+                android:alpha=".5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="@string/search_hair_wigs_accessories"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <android.support.v4.view.ViewPager
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/top_vp"
+                        />
+
+                    <com.ogaclejapan.smarttablayout.SmartTabLayout
+                        android:background="@drawable/curve_black1"
+                        android:padding="5dp"
+                        android:layout_margin="10dp"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/top_vp_tab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        app:stl_clickable="false"
+                        app:stl_customTabTextLayoutId="@layout/custom_tab_circle"
+                        app:stl_dividerColor="@color/transparent"
+                        app:stl_dividerThickness="0dp"
+                        app:stl_indicatorColor="@color/white"
+                        app:stl_indicatorCornerRadius="4dp"
+                        app:stl_indicatorGravity="center"
+                        app:stl_indicatorInterpolation="linear"
+                        app:stl_indicatorThickness="8dp"
+                        app:stl_underlineColor="@color/transparent"
+                        app:stl_underlineThickness="0dp"
+                        />
+                </FrameLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/colors_holder"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_margin="20dp"
+                        android:text="@string/hair_colors"
+                        android:textColor="@color/black"
+                        fontPath = "fonts/NirmalaB.ttf"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/colors_rsv"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/types_holder"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/hair_types"
+                        android:textColor="@color/black"
+                        fontPath = "fonts/NirmalaB.ttf"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/types_rsv"
+                        android:layout_marginBottom="20dp"
+                        />
+
+                </LinearLayout>
+                <FrameLayout
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <me.xiaopan.sketch.SketchImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:alpha=".3"
+                        android:src="@drawable/image_bell3"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <LinearLayout
+                        android:layout_gravity="bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/customize_your_order"
+                            android:textColor="@color/white"
+                            fontPath = "fonts/NirmalaB.ttf"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:alpha=".7"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/choose_hair_color"
+                            android:textColor="@color/white"
+                            fontPath = "fonts/NirmalaB.ttf"
+                            />
+
+
+                        <LinearLayout
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal"
+                            android:clickable="true"
+                            android:background="@drawable/white_button"
+
+                            style="?attr/buttonStyleSmall"
+                            android:id="@+id/custom_but"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center"
+                                android:text="@string/order_now"
+                                android:textColor="@color/brown03"
+                                fontPath = "fonts/NirmalaB.ttf"
+                                android:textSize="12sp" />
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/ic_cart"
+                                android:alpha=".5"
+                                android:tint="@color/brown0"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </FrameLayout>
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/tools_holder"
+                    >
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="@string/hair_tools"
+                        android:textColor="@color/black"
+                        fontPath = "fonts/NirmalaB.ttf"
+                        />
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tools_rsv"
+                        android:layout_marginBottom="20dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/ex_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="@string/exclusive_collections"
+                        android:textColor="@color/black"
+                        fontPath = "fonts/NirmalaB.ttf"
+                        />
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/exclusive_rsv"
+                        android:layout_marginBottom="20dp"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"/>
+            </LinearLayout>
+
+        </ScrollView>
+
+<include layout="@layout/loading_layout"/>
+
+    </FrameLayout>
+
+</LinearLayout>

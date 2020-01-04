@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT" />
+        </compositeConfiguration>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/creditcarddesign" />
+            <option value="$PROJECT_DIR$/filepickerMain" />
+            <option value="$PROJECT_DIR$/jiaozivideoplayer" />
+            <option value="$PROJECT_DIR$/paystack" />
+            <option value="$PROJECT_DIR$/pinpad" />
+            <option value="$PROJECT_DIR$/raveandroid" />
+            <option value="$PROJECT_DIR$/telegramgallery" />
+            <option value="$PROJECT_DIR$/videocompressor" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

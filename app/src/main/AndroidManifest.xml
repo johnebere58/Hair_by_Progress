@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hairbyprogress">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:exported="false"
+            android:authorities="${applicationId}.my.package.name.provider"
+            android:name=".GenericFileProvider"
+            android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCGR32-YAHIEgTE9Bzc3OBPdrfdH85L8Lk" />
+
+        <activity android:name=".PreInit"
+
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity"
+            android:configChanges="orientation|fontScale|keyboard|layoutDirection|keyboardHidden|screenSize|screenLayout|smallestScreenSize"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleTask"
+            />
+        <activity android:name=".OrderItems"
+            android:configChanges="orientation|fontScale|keyboard|layoutDirection|keyboardHidden|screenSize|screenLayout|smallestScreenSize"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <activity android:name=".SearchMain"
+            android:configChanges="orientation|fontScale|keyboard|layoutDirection|keyboardHidden|screenSize|screenLayout|smallestScreenSize"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <activity android:name=".PostNews"
+            android:configChanges="orientation|fontScale|keyboard|layoutDirection|keyboardHidden|screenSize|screenLayout|smallestScreenSize"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <activity android:name=".ViewImageActivity"
+            android:configChanges="orientation|fontScale|keyboard|layoutDirection|keyboardHidden|screenSize|screenLayout|smallestScreenSize"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <activity android:name=".RateMain"
+            android:configChanges="orientation|fontScale|keyboard|layoutDirection|keyboardHidden|screenSize|screenLayout|smallestScreenSize"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <activity android:name=".Testing"
+            android:configChanges="orientation|fontScale|keyboard|layoutDirection|keyboardHidden|screenSize|screenLayout|smallestScreenSize"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <activity android:name=".SectionsMain"
+            android:configChanges="orientation|fontScale|keyboard|layoutDirection|keyboardHidden|screenSize|screenLayout|smallestScreenSize"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <activity android:name=".AddAddress"
+            android:configChanges="orientation|fontScale|keyboard|layoutDirection|keyboardHidden|screenSize|screenLayout|smallestScreenSize"
+            android:windowSoftInputMode="stateHidden"
+            />
+       <activity android:name=".CartMain"
+            android:configChanges="orientation|fontScale|keyboard|layoutDirection|keyboardHidden|screenSize|screenLayout|smallestScreenSize"
+            android:windowSoftInputMode="stateHidden"
+            />
+       <activity android:name=".PostProduct"
+            android:configChanges="orientation|fontScale|keyboard|layoutDirection|keyboardHidden|screenSize|screenLayout|smallestScreenSize"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <activity android:name=".ProductMain"
+            android:configChanges="orientation|fontScale|keyboard|layoutDirection|keyboardHidden|screenSize|screenLayout|smallestScreenSize"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <activity android:name=".InchMain"
+            android:configChanges="orientation|fontScale|keyboard|layoutDirection|keyboardHidden|screenSize|screenLayout|smallestScreenSize"
+            android:windowSoftInputMode="stateHidden"
+            />
+       <activity android:name=".CustomActivity"
+            android:configChanges="orientation|fontScale|keyboard|layoutDirection|keyboardHidden|screenSize|screenLayout|smallestScreenSize"
+            android:windowSoftInputMode="stateHidden"
+            />
+       <activity android:name=".SignupActivity"
+            android:configChanges="orientation|fontScale|keyboard|layoutDirection|keyboardHidden|screenSize|screenLayout|smallestScreenSize"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/LoginTheme"
+            />
+         <activity android:name=".Forgot"
+            android:configChanges="orientation|fontScale|keyboard|layoutDirection|keyboardHidden|screenSize|screenLayout|smallestScreenSize"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/LoginTheme"
+            />
+         <activity android:name=".PostHomeTop"
+            android:configChanges="orientation|fontScale|keyboard|layoutDirection|keyboardHidden|screenSize|screenLayout|smallestScreenSize"
+            android:windowSoftInputMode="stateHidden"
+
+            />
+        <activity android:name=".LoginActivity"
+            android:configChanges="orientation|fontScale|keyboard|layoutDirection|keyboardHidden|screenSize|screenLayout|smallestScreenSize"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/LoginTheme"
+            />
+ <activity android:name=".PricesMain"
+            android:configChanges="orientation|fontScale|keyboard|layoutDirection|keyboardHidden|screenSize|screenLayout|smallestScreenSize"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/LoginTheme"
+            />
+
+
+<activity android:name=".Intro"
+            android:configChanges="orientation|fontScale|keyboard|layoutDirection|keyboardHidden|screenSize|screenLayout|smallestScreenSize"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/LoginTheme"
+            />
+
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="com.tangxiaolv.telegramgallery.GalleryActivity"
+            android:configChanges="orientation|fontScale|keyboard|layoutDirection|keyboardHidden|screenSize|screenLayout|smallestScreenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+
+
+        <service android:name=".services.AppSettingsService" />
+
+        <receiver android:name=".services.ServiceReceiver"
+            >
+            <intent-filter>
+
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

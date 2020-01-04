@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/root_back"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingPrefix"
+    >
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+    <FrameLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loading_layout"
+        android:background="@color/white"
+        android:clickable="true">
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/loading_indicator"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/AVLoadingIndicatorView"
+            android:visibility="visible"
+            app:indicatorColor="@color/brown0"
+            app:indicatorName="PacmanIndicator"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <FrameLayout
+
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:id="@+id/retry_holder"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:id="@+id/retry_layout"
+            android:background="?attr/selectableItemBackground"
+            >
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                >
+                <ImageView
+                    android:alpha=".5"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ic_no_internet"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:tint="@color/blue0"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="No Internet Connectivity"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:gravity="center" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:alpha=".1"
+                    android:background="@color/app_blue"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:alpha=".6"
+                    android:gravity="center"
+                    android:text="Tap to Retry"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="12sp" />
+
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:id="@+id/empty_layout"
+        android:clickable="true">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/empty1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white">
+
+
+
+            <TextView
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/empty_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:alpha=".4"
+                android:textSize="18sp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                fontPath = "fonts/SF Foxboro Script.ttf"
+                android:lineSpacingExtra="8dp"
+                />
+            <TextView
+                fontPath = "fonts/NirmalaB.ttf"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="-Anonymous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:alpha=".4"
+                android:textSize="15sp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/empty2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white">
+
+
+
+            <ImageView
+                android:id="@+id/empty2_icon"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_bid"
+                android:layout_gravity="center"
+                android:alpha=".3"
+                android:tint="@color/black"
+                />
+            <TextView
+
+                android:id="@+id/empty2_tv"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="No Bid Yet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                fontPath = "fonts/NirmalaB.ttf"
+                android:lineSpacingExtra="8dp"
+                />
+            <TextView
+
+                android:id="@+id/empty2_tv2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="~You have not placed any bid yet~"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:alpha=".4"
+                android:textSize="15sp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                />
+
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+</FrameLayout>

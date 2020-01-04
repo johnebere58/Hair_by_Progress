@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:ignore="MissingPrefix"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/brown0"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:tint="@color/white"
+            android:src="@drawable/ic_back"
+            android:padding="15dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:onClick="clickBack"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/add_top"
+            android:textSize="17sp"
+            android:id="@+id/title_tv"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/display_section"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:background="@drawable/blue_stoke_button"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="SELECT SECTION"
+                android:textColor="@color/blue0"
+                fontPath = "fonts/NirmalaB.ttf"
+                />
+
+
+            <me.xiaopan.sketch.SketchImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/vp_image"
+                android:background="@color/blue09"
+                android:scaleType="centerCrop"
+                />
+            <TextView
+                android:focusable="true"
+                android:clickable="true"
+                android:background="@drawable/black_stoke_button"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="ADD PHOTO"
+                android:textColor="@color/brown03"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                fontPath = "fonts/NirmalaB.ttf"
+                android:id="@+id/select_photo"
+                />
+
+            <TextView
+                android:onClick="pickFromGallery"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRODUCT INFO"
+                android:textSize="12sp"
+                android:alpha=".7"
+                android:textColor="@color/blue0"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:id="@+id/description_layout"
+                ></LinearLayout>
+            <TextView
+                android:id="@+id/add_description"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:background="@drawable/blue_stoke_button"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="ADD INFO"
+                android:textColor="@color/blue0"
+                fontPath = "fonts/NirmalaB.ttf"
+                />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <TextView
+        android:focusable="true"
+        android:clickable="true"
+        android:background="@drawable/red_stoke_button"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="@string/upload"
+        android:textColor="@color/red3"
+        android:layout_margin="20dp"
+        fontPath = "fonts/NirmalaB.ttf"
+        android:id="@+id/publish"
+        />
+</LinearLayout>

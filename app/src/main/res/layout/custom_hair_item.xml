@@ -1,0 +1,52 @@
+<FrameLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<android.support.v7.widget.CardView
+    android:id="@+id/main_layout"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:cardElevation="1dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <me.xiaopan.sketch.SketchImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/imv"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_line"
+        android:alpha=".5"
+        />
+    <TextView
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="FUMI HAIR"
+        android:padding="5dp"
+        android:id="@+id/tv"
+        android:textSize="12sp"
+        fontPath = "fonts/NirmalaB.ttf"
+        />
+
+    <ImageView
+        android:id="@+id/check"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:src="@drawable/ic_checkmark"
+        android:tint="@color/white"
+        android:alpha=".5"
+        android:padding="40dp"
+        />
+</android.support.v7.widget.CardView>
+
+</FrameLayout>

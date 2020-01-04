@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="row_active">#efefef</color>
+  <color name="colorPrimary">#da4d26</color>
+  <color name="colorPrimaryDark">#a93409</color>
+  <color name="colorAccent">#FF4081</color>
+  <color name="bg_gray">#ecedef</color>
+  <color name="transparent_black">#94333232</color>
+
+  <drawable name="tab_gray">@color/bg_gray</drawable>
+  <drawable name="tab_white">@android:color/white</drawable>
+
+  <color name="blue0"> #8470ff </color>
+  <color name="blue1"> #7664e5 </color>
+  <color name="blue2"> #6959cc </color>
+  <color name="blue3">#5c4eb2</color>
+  <color name="blue4"> #4f4399 </color>
+  <color name="blue5"> #42387f </color>
+  <color name="blue6"> #342c66 </color>
+  <color name="blue6_transparent">#b1342c66</color>
+  <color name="blue7"> #27214c </color>
+  <color name="blue8"> #1a1633 </color>
+  <color name="blue9"> #0d0b19 </color>
+  <color name="blue10"> #000000 </color>
+
+  <color name="blue01"> #8470ff </color>
+  <color name="blue02"> #907eff </color>
+  <color name="blue03"> #928cff </color>
+  <color name="blue04"> #a89aff </color>
+  <color name="blue05"> #b5a9ff </color>
+  <color name="blue06"> #c1b7ff </color>
+  <color name="blue07"> #cdc5ff </color>
+  <color name="blue08"> #dad4ff </color>
+  <color name="blue09">#06534949</color>
+  <color name="blue010">#08534949</color>
+
+  <color name="white">#ffffff</color>
+  <color name="black">#000000</color>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingPrefix"
+    android:background="@color/brown0"
+    >
+
+    <com.hairbyprogress.kenburnsview.KenBurnsView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/image_bells4"
+        android:scaleType="centerCrop"
+        android:id="@+id/sample"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_line"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        >
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="The Only Place"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            fontPath = "fonts/NirmalaB.ttf"
+            android:gravity="center"
+            />
+        <TextView
+            android:alpha=".8"
+            android:id="@+id/title_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="To buy quality hair extensions online"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

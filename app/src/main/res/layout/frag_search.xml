@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingPrefix"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@color/blue3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="@drawable/curve_blue6_2"
+                android:layout_marginBottom="20dp"
+                >
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:tint="@color/white"
+                    android:src="@drawable/ic_search"
+                    android:layout_marginLeft="15dp"
+                    />
+                <TextView
+                    android:id="@+id/search_but"
+                    android:alpha=".5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="Search in stories and tips"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="true"
+
+                    android:background="?attr/selectableItemBackground"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:id="@+id/lay"
+                >
+                <FrameLayout
+
+                    android:tag="0"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+                    <TextView
+
+                        android:textSize="15sp"
+                        fontPath = "fonts/NirmalaB.ttf"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="CATEGORIES"
+                        android:background="@drawable/curve_blue3"
+                        android:textColor="@color/white"
+                        android:padding="5dp"
+                        />
+                </FrameLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.hairbyprogress.recyclerview.MyRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rsv_search"
+        android:background="@color/blue09"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/gradient_line1"
+        android:alpha=".1"
+        />
+</FrameLayout>
+
+
+
+</LinearLayout>

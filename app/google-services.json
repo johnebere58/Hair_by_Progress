@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "71792166314",
+    "firebase_url": "https://hair-by-progress.firebaseio.com",
+    "project_id": "hair-by-progress",
+    "storage_bucket": "hair-by-progress.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71792166314:android:75055df7c38ae191",
+        "android_client_info": {
+          "package_name": "com.hairbyprogress"
+         }
+      },
+      "oauth_client": [
+        {
+          "client_id": "71792166314-n1rge2orkfvgfncj7cuglgdij3u6rsk3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgr_aLVOKd29Tb5hcncWbv9Vf3-cE85Yk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

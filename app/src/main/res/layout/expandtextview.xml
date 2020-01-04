@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:bao="http://schemas.android.com/apk/res-auto"
+  >
+    <at.blogc.android.views.ExpandableTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv"
+        android:maxLines="5"
+        android:ellipsize="end"
+        bao:animation_duration="700"
+        android:textSize="12sp"
+
+        android:text="@string/sample"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+         />
+
+    <TextView
+
+
+        android:textColor="@color/blue0"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/curve_white_button"
+        android:gravity="center"
+        android:text="Read More"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:id="@+id/toggle"
+        android:textSize="12sp"
+        android:layout_gravity="right"
+       />
+</LinearLayout>

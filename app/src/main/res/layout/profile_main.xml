@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingPrefix"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/rootView"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_gravity="center"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:onClick="clickBack"
+                    android:tint="@color/black"
+                    android:src="@drawable/ic_back"
+                    android:padding="15dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <FrameLayout
+                    android:layout_marginRight="7dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/circle_blue3"
+                        android:padding="15dp"
+                        android:alpha=".5"
+                        />
+                    <com.hairbyprogress.custom.CircleImageView
+                        android:id="@+id/user_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </FrameLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    >
+                    <TextView
+                        android:id="@+id/name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hanna6"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        fontPath = "fonts/NirmalaB.ttf"
+                        android:singleLine="true"
+                        />
+                    <TextView
+                        android:id="@+id/gender_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="FEMALE"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:alpha=".5"
+                        />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/flag_but"
+                    android:background="@drawable/circle_white_stroke_red0_button"
+                    android:clickable="true"
+                    android:tint="@color/red0"
+                    android:src="@drawable/ic_flag"
+                    android:padding="8dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    />
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/chat_but"
+                    android:background="@drawable/circle_white_stroke_blue3_button"
+                    android:clickable="true"
+                    android:tint="@color/blue0"
+                    android:src="@drawable/ic_chat1"
+                    android:padding="10dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:background="@drawable/curve_white"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="The safest place to share your problems online"
+                android:textColor="@color/gray_dark"
+                android:textSize="14sp"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:id="@+id/lay"
+                >
+                <FrameLayout
+
+                    android:onClick="setPosition"
+                    android:tag="0"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+                    <TextView
+
+
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Stories"
+                        android:background="@drawable/curve_blue3"
+                        android:textColor="@color/white"
+                        android:padding="5dp"
+                        fontPath = "fonts/NirmalaB.ttf"
+                        />
+                </FrameLayout>
+
+                <FrameLayout
+
+                    android:onClick="setPosition"
+                    android:tag="1"
+                    android:alpha=".4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+                    <TextView
+                        fontPath = "fonts/NirmalaB.ttf"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Tips"
+                        android:background="@drawable/curve_blue3"
+                        android:textColor="@color/white"
+                        android:padding="5dp"
+                        />
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.hairbyprogress.custom.CustomViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vp_home"
+        android:background="@color/blue09"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/gradient_line1"
+        android:alpha=".1"
+        />
+</FrameLayout>
+
+
+
+</LinearLayout>

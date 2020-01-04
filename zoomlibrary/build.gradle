@@ -1,0 +1,14 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+apply plugin: 'signing'
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: '*.jar')
+    implementation 'com.android.support:support-annotations:28.0.0-alpha1'
+}
+
+android {
+    compileSdkVersion 28
+
+}

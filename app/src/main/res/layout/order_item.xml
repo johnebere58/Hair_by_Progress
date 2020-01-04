@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/default_white"
+    >
+    <android.support.v7.widget.CardView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="1dp"
+        app:cardBackgroundColor="@color/white"
+        android:id="@+id/main_layout"
+        >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                >
+                <TextView
+                    fontPath = "fonts/NirmalaB.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="ORDER ID: 667GHT"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/id_tv"
+                    />
+                <TextView
+                    android:id="@+id/status_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="PENDING DELIVERY"
+                    android:textColor="@color/red0"
+                    android:layout_marginRight="5dp"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:alpha=".5"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Created"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="5dp"
+                    />
+                <com.hairbyprogress.custom.RelativeTimeTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="3 days ago"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/time_tv"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:alpha=".5"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Total Items"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="3 Items"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/items_tv"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:alpha=".5"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Total Price"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="N34,000"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/price_tv"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:alpha=".5"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Payment Type"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="10% Part Payment (N3,400)"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/payment_option_tv"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:alpha=".5"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Delivery Time"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="5dp"
+                    />
+                <com.hairbyprogress.custom.RelativeTimeTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="1 - 14 Days"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/delivery_time_tv"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:alpha=".5"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Delivery Info"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Name: Micheal James, Phone: 08098392209382, Street: 34 Apjoojo street off ikoyi"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/delivery_info_tv"
+                    />
+            </LinearLayout>
+
+
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black"
+                android:alpha=".3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+            <LinearLayout
+                android:id="@+id/view_but"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/black_stoke_button"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                style="?attr/buttonStyleSmall"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="@string/view_order_items"
+                    android:textColor="@color/brown03"
+                    fontPath = "fonts/NirmalaB.ttf"
+                    android:textSize="14sp" />
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/ic_cart"
+                    android:alpha=".5"
+                    android:tint="@color/brown0"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rate_but"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/default_white_button"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                >
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/action_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="@string/rate_order"
+                    android:textColor="@color/blue0"
+                    fontPath = "fonts/NirmalaB.ttf"
+                    android:textSize="12sp" />
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/action_icon"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/ic_star"
+                    android:alpha=".5"
+                    android:tint="@color/blue0"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/padding"
+        />
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><resources xmlns:xandrolate="http://com.github.androlate">
+    <string name="app_name">Hair by Progress</string>
+
+    <string name="empty_text">A problem shared, is a problem half solved</string>
+
+    <string name="sample">Je suis john
+        </string>
+ <string name="sample1">Hello we are going to do this today so whatever you thing you are doing please stop it and
+        do it whenever we want because no one can agree the way we decided and after all. It used to be like that till they
+        decided to close the whole meetingHello we are going to do this today so whatever you thing you are doing please stop
+        </string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name2">Hello World</string>
+    <string name="new_line_test">Line 1\nLine 2\nLine 3</string>
+    <string name="param_test">Hello %1$s, nice to meet you my name is %2$s</string>
+    <string-array name="array_test">
+        <item>String arrays are tricky</item>
+        <item>So to keep it simple</item>
+        <item>just translate the entire array together</item>
+    </string-array>
+    <string name="html">Welcome to <b>Android</b>!</string>
+    <string name="cdata"><![CDATA[There we have some text]]></string>
+    <string name="not_translated" translatable="false">Not translated</string>
+
+
+    <string name="search_hair_wigs_accessories">Search hair, wigs, accessories</string>
+    <string name="colors">COLORS</string>
+    <string name="categories">CATEGORIES</string>
+    <string name="accessories">ACCESSORIES</string>
+    <string name="plus">PLUS</string>
+    <string name="exclusives">EXCLUSIVES</string>
+    <string name="select_photo">SELECT PHOTO</string>
+    <string name="add_top">ADD TOP</string>
+    <string name="add_section">ADD SECTION</string>
+    <string name="sections">SECTIONS</string>
+    <string name="error_try_again">Unexpected error occurred. Try again</string>
+    <string name="list_empty">List is Empty</string>
+    <string name="title">TITLE</string>
+    <string name="enter_title">Enter section title</string>
+    <string name="content">Content</string>
+    <string name="added">Added</string>
+    <string name="use_comma">Use comma (,) to separate</string>
+    <string name="are_you_sure">Are you sure you want to delete?</string>
+    <string name="no">NO</string>
+    <string name="yes">YES</string>
+    <string name="setting_up">Setting up, Try again later</string>
+    <string name="delete">DELETE</string>
+    <string name="publish">PUBLISH</string>
+    <string name="no_internet">No internet connectivity</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="no_detail_added">No Detail Added</string>
+    <string name="no_description_added">No Description Added</string>
+    <string name="upload">UPLOAD</string>
+    <string name="uploading">Uploading</string>
+    <string name="successful">Successful</string>
+    <string name="add_again">Do you want to add again?</string>
+    <string name="add_again_question">Do you want to add again?</string>
+    <string name="deleted">Deleted</string>
+    <string name="choose_hair_color">Choose hair type \nChoose hair color \nChoose hair bundle \nChoose hair gram </string>
+    <string name="shop_now">SHOP NOW</string>
+   <string name="login">LOGIN</string>
+   <string name="signup">SIGNUP</string>
+   <string name="appname">Hair by Progress</string>
+   <string name="the_best_place_to_buy_quality_hair_extensions">The best place to buy quality hair extensions</string>
+   <string name="login_small">Login</string>
+   <string name="your_email">YOUR EMAIL</string>
+   <string name="your_password">YOUR PASSWORD</string>
+   <string name="show">SHOW</string>
+   <string name="forgot_password">FORGOT PASSWORD?</string>
+   <string name="dont_have_an_account_signup_here">Dont have an account? Signup here</string>
+   <string name="create_account">Create Account</string>
+   <string name="retype_password">RETYPE PASSWORD</string>
+   <string name="sign_up_small">Sign up</string>
+   <string name="already_have_an_account_login_here">Already have an account? Login here</string>
+   <string name="customize_your_order">CUSTOMIZE YOUR ORDER</string>
+   <string name="hair_colors">HAIR COLORS</string>
+   <string name="hair_types">HAIR TYPES</string>
+   <string name="order_now">ORDER NOW</string>
+   <string name="hair_tools">HAIR TOOLS</string>
+   <string name="exclusive_collections">EXCLUSIVE COLLECTIONS</string>
+   <string name="add">ADD</string>
+   <string name="add_to_cart">ADD TO CART</string>
+   <string name="my_order">MY ORDER</string>
+   <string name="feedback">FEEDBACK</string>
+   <string name="rate_order">RATE ORDER</string>
+   <string name="view_order_items">VIEW ORDER ITEMS</string>
+   <string name="register">REGISTER</string>
+   <string name="notifications">Notifications</string>
+   <string name="push_notifications">Push Notifications</string>
+   <string name="about">About</string>
+   <string name="about_app">About App</string>
+   <string name="read_all_about_the_app">Read all about the App</string>
+   <string name="share_app">Share App</string>
+   <string name="share_the_app_with_friends">Share the app with friends</string>
+   <string name="rate">Rate</string>
+   <string name="rate_the_app_on_play_store">Rate the App on Play Store</string>
+   <string name="app_update">App update</string>
+   <string name="check_for_update">Check for update</string>
+   <string name="other">Other</string>
+   <string name="privacy_policy">Privacy policy</string>
+   <string name="read_our_privacy_policy">Read our privacy policy</string>
+   <string name="terms_and_conditions">Terms and conditions</string>
+   <string name="read_our_terms_and_conditions">Read our terms and conditions</string>
+   <string name="feedaback_small">Feedback</string>
+   <string name="provide_us_with_feedback_to_help_us_improve_the_app">Provide us with feedback to help us improve the app</string>
+   <string name="help_and_support">Help and support</string>
+   <string name="ask_us_anytime_for_help_and_support">Ask us anytime for help and support</string>
+   <string name="log_out">Log out</string>
+   <string name="customized">Customized</string>
+   <string name="next">NEXT</string>
+   <string name="hair_bundles">HAIR BUNDLES</string>
+   <string name="how_many_bundles_do_you_want">How many bundles do you want?</string>
+   <string name="hair_gram">HAIR GRAM</string>
+   <string name="how_many_gram_should_each_bundle_weigh">How many gram should each bundle weigh?</string>
+   <string name="customized_color_optional">CUSTOMIZED COLOR (OPTIONAL)</string>
+   <string name="upload_a_photo_of_what_the_hair_should_look_like">Upload a photo of what the hair should look like</string>
+   <string name="upload_photo">UPLOAD PHOTO</string>
+   <string name="your_order_details">YOUR ORDER DETAILS</string>
+   <string name="total_price">Total Price</string>
+    <string name="full_name">FULL NAME</string>
+    <string name="phone_number">PHONE NUMBER</string>
+    <string name="address_full_description">ADDRESS (FULL DESCRIPTION)</string>
+    <string name="city">CITY</string>
+    <string name="state">STATE</string>
+    <string name="delivery_address">DELIVERY ADDRESS</string>
+    <string name="add_address">ADD ADDRESS</string>
+
+</resources>

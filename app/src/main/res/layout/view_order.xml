@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:ignore="MissingPrefix">
+    <LinearLayout
+        android:background="@color/brown0"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_gravity="center"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:onClick="clickBack"
+            android:tint="@color/white"
+            android:src="@drawable/ic_back"
+            android:padding="15dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="ORDER ITEMS"
+            android:textColor="@color/white"
+            fontPath = "fonts/NirmalaB.ttf"
+            android:maxLines="1"
+            />
+    </LinearLayout>
+   <com.hairbyprogress.recyclerview.MyRecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_weight="1"
+       android:id="@+id/rsv"
+       />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/bottom"
+        android:background="@color/brown0"
+        >
+
+        <LinearLayout
+            android:id="@+id/add_but"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:background="@drawable/curve_white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            style="?attr/buttonStyleSmall"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="ADD ITEMS (2)"
+                android:textColor="@color/brown03"
+                fontPath = "fonts/NirmalaB.ttf"
+                android:textSize="14sp"
+                android:id="@+id/add_tv"
+                />
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_next1"
+                android:alpha=".5"
+                android:tint="@color/brown0"
+                android:id="@+id/next_icon"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

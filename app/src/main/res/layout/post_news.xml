@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:ignore="MissingPrefix">
+    <LinearLayout
+        android:background="@color/brown0"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_gravity="center"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:onClick="clickBack"
+            android:tint="@color/white"
+            android:src="@drawable/ic_back"
+            android:padding="15dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:text="POST NEWS"
+            android:textColor="@color/white"
+            fontPath = "fonts/NirmalaB.ttf"
+            android:maxLines="1"
+            />
+    </LinearLayout>
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_weight="1"
+       >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           >
+           <FrameLayout
+               android:background="@color/default_white"
+               android:layout_width="match_parent"
+               android:layout_height="200dp">
+
+               <android.support.v4.view.ViewPager
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:id="@+id/vp"
+                   />
+
+               <com.ogaclejapan.smarttablayout.SmartTabLayout
+                   android:background="@drawable/curve_black1"
+                   android:padding="5dp"
+                   android:layout_margin="10dp"
+                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                   android:id="@+id/vp_tab"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="bottom|center_horizontal"
+                   app:stl_clickable="false"
+                   app:stl_customTabTextLayoutId="@layout/custom_tab_circle"
+                   app:stl_dividerColor="@color/transparent"
+                   app:stl_dividerThickness="0dp"
+                   app:stl_indicatorColor="@color/white"
+                   app:stl_indicatorCornerRadius="4dp"
+                   app:stl_indicatorGravity="center"
+                   app:stl_indicatorInterpolation="linear"
+                   app:stl_indicatorThickness="8dp"
+                   app:stl_underlineColor="@color/transparent"
+                   app:stl_underlineThickness="0dp"
+                   />
+           </FrameLayout>
+
+           <TextView
+               android:focusable="true"
+               android:clickable="true"
+               android:background="@drawable/black_stoke_button"
+               android:gravity="center"
+               android:padding="5dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="12sp"
+               android:text="ADD PHOTO"
+               android:textColor="@color/brown03"
+               android:layout_marginLeft="20dp"
+               android:layout_marginRight="20dp"
+               android:layout_marginBottom="10dp"
+               android:layout_marginTop="10dp"
+               fontPath = "fonts/NirmalaB.ttf"
+               android:id="@+id/select_photo"
+               />
+
+           <LinearLayout
+               android:layout_marginTop="20dp"
+               android:layout_marginRight="20dp"
+               android:layout_marginLeft="20dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="TITLE"
+                   android:textSize="12sp"
+                   android:alpha=".5"
+                   android:textColor="@color/black"
+                   />
+               <EditText
+                   android:id="@+id/title_etv"
+                   android:background="@color/transparent"
+                   android:textColor="@color/black"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:textSize="17sp"
+                   android:layout_gravity="center"
+                   android:gravity="center_vertical"
+                   android:inputType="textCapSentences"
+                   />
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="2dp"
+                   android:background="@color/brown0"
+                   />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_marginTop="10dp"
+               android:layout_marginRight="20dp"
+               android:layout_marginLeft="20dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="MESSAGE"
+                   android:textSize="12sp"
+                   android:alpha=".5"
+                   android:textColor="@color/black"
+                   />
+               <EditText
+                   android:id="@+id/message_etv"
+                   android:background="@color/transparent"
+                   android:textColor="@color/black"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:minHeight="50dp"
+                   android:textSize="17sp"
+                   android:layout_gravity="center"
+                   android:gravity="center_vertical"
+                   android:inputType="textCapSentences|textMultiLine"
+                   />
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="2dp"
+                   android:background="@color/brown0"
+                   />
+
+           </LinearLayout>
+
+<LinearLayout
+               android:layout_marginTop="10dp"
+               android:layout_marginRight="20dp"
+               android:layout_marginLeft="20dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="TAG"
+                   android:textSize="12sp"
+                   android:alpha=".5"
+                   android:textColor="@color/black"
+                   />
+               <TextView
+                   android:id="@+id/tag_tv"
+                   android:clickable="true"
+                   android:background="?attr/buttonStyleSmall"
+                   android:textColor="@color/black"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:textSize="17sp"
+                   android:layout_gravity="center"
+                   android:gravity="center_vertical"
+                   android:inputType="textCapSentences"
+                   />
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="2dp"
+                   android:background="@color/brown0"
+                   />
+
+           </LinearLayout>
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="100dp"/>
+       </LinearLayout>
+   </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/bottom"
+        android:background="@color/brown0"
+        >
+
+        <LinearLayout
+            android:id="@+id/post_but"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:background="@drawable/curve_white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            style="?attr/buttonStyleSmall"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="POST"
+                android:textColor="@color/brown03"
+                fontPath = "fonts/NirmalaB.ttf"
+                android:textSize="14sp"
+                android:id="@+id/next_tv"
+                />
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_next1"
+                android:alpha=".5"
+                android:tint="@color/brown0"
+                android:id="@+id/next_icon"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

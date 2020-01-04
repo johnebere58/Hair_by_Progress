@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:background="@color/brown0"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_gravity="center"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:onClick="clickBack"
+            android:tint="@color/white"
+            android:src="@drawable/ic_back"
+            android:padding="15dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/tab"
+            >
+            <TextView
+                android:layout_marginRight="10dp"
+                android:background="@drawable/curve_brown_edge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                android:text="YOUR CART"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+
+                />
+            <TextView
+                android:layout_marginRight="10dp"
+                android:background="@drawable/curve_brown_edge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                android:text="DELIVERY"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:alpha=".3"
+                />
+             <TextView
+                 android:alpha=".3"
+                android:layout_marginRight="10dp"
+                 android:background="@drawable/curve_brown_edge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                android:text="PAYMENT"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.hairbyprogress.custom.CustomViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/vp"
+        android:background="@color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/bottom"
+        android:background="@color/brown0"
+        >
+
+        <LinearLayout
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:background="@drawable/curve_white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            style="?attr/buttonStyleSmall"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="DELIVERY ADDRESS"
+                android:textColor="@color/brown03"
+                fontPath = "fonts/NirmalaB.ttf"
+                android:textSize="14sp"
+                android:id="@+id/next_tv"
+                />
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_next1"
+                android:alpha=".5"
+                android:tint="@color/brown0"
+                android:id="@+id/next_icon"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

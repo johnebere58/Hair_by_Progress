@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:ignore="MissingPrefix">
+
+    <TextView
+        fontPath = "fonts/NirmalaB.ttf"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECT HAIR LENGTH"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/len_rsv"
+        android:background="@color/white"
+        />
+
+
+</LinearLayout>

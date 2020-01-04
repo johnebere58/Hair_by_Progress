@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:ignore="MissingPrefix"
+    android:id="@+id/rootView"
+    >
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <FrameLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circle_blue3"
+                android:padding="15dp"
+                android:alpha=".5"
+                />
+            <com.hairbyprogress.custom.CircleImageView
+                android:id="@+id/user_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/name_tv"
+                    fontPath="fonts/NirmalaB.ttf"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="David4"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/time_tv"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:alpha=".3"
+                    android:text="5:00 PM"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+            <TextView
+                android:visibility="gone"
+                android:padding="5dp"
+                android:background="@drawable/curve_blue09"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Health Expert"
+                android:textColor="@color/red0"
+                android:textSize="12sp"
+                />
+
+           <LinearLayout
+               android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+               <ImageView
+                   android:layout_width="15dp"
+                   android:layout_height="15dp"
+                   android:layout_gravity="center"
+                   android:src="@drawable/ic_chat"
+                   android:tint="@color/black"
+                   android:alpha=".3"
+                   android:layout_marginRight="5dp"
+                   />
+               <ImageView
+
+                   android:id="@+id/read_icon"
+                   android:layout_width="10dp"
+                   android:layout_height="10dp"
+                   android:layout_gravity="center"
+                   android:src="@drawable/circle"
+                   android:tint="@color/blue0"
+                   android:layout_marginRight="5dp"
+                   />
+
+               <com.vanniktech.emoji.EmojiTextView
+                   android:id="@+id/last_chat_tv"
+                   android:layout_gravity="center"
+                   android:alpha=".5"
+                   fontPath="fonts/NirmalaB.ttf"
+
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Please when are you going to be through?"
+                   android:textColor="@color/black"
+                   android:textSize="12sp"
+                   android:layout_weight="1"
+                   android:maxLines="1"
+                   android:ellipsize="end"
+                   />
+               <ImageView
+                   android:id="@+id/icon_mute"
+                   android:layout_width="15dp"
+                   android:layout_height="15dp"
+                   android:layout_gravity="center"
+                   android:src="@drawable/ic_mute"
+                   android:tint="@color/black"
+                   android:alpha=".3"
+                   android:layout_marginRight="5dp"
+                   />
+               <TextView
+                   android:id="@+id/unread_tv"
+                   android:layout_width="16dp"
+
+                   android:layout_height="16dp"
+                   android:layout_gravity="center"
+                   android:background="@drawable/circle_red0"
+                   android:gravity="center"
+                   android:text="9"
+                   android:textColor="@color/white"
+                   android:textSize="9sp"
+                   />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:alpha=".1"
+        android:background="@color/black"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/padding"
+        android:background="@color/white"
+        />
+
+</LinearLayout>

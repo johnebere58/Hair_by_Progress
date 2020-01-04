@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingPrefix"
+
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+             <ImageView
+
+                 android:layout_gravity="center"
+                 android:background="@drawable/circle_white_stroke"
+                 android:id="@+id/imv"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_checkmark"
+                 android:tint="@color/white"
+                 android:padding="20dp"
+
+                />
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                fontPath = "fonts/NirmalaB.ttf"
+                android:gravity="center"
+                />
+            <TextView
+                android:alpha=".8"
+                android:id="@+id/title_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Job Deposit are securely held by Alljob.com"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+               />
+
+            <TextView
+                android:visibility="gone"
+                android:alpha=".5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Grab the job, Get it done, Get paid"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+               />
+
+            <FrameLayout
+
+                android:visibility="gone"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/ok"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:layout_marginTop="20dp"
+                style="?attr/buttonStyleSmall"
+                android:background="@drawable/curve_white"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/ok_tv"
+                    android:textColor="@color/blue0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OK"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    fontPath = "fonts/NirmalaB.ttf"
+
+                    />
+
+
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

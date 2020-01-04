@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="video_formats">
+        <item>3gp</item>
+        <item>3g2</item>
+        <item>3gp2</item>
+        <item>3gpp</item>
+        <item>amv</item>
+        <item>asf</item>
+        <item>avi</item>
+        <item>bin</item>
+        <item>divx</item>
+        <item>drc</item>
+        <item>dv</item>
+        <item>f4v</item>
+        <item>gxf</item>
+        <item>iso</item>
+        <item>m1v</item>
+        <item>m2v</item>
+        <item>m2t</item>
+        <item>m2ts</item>
+        <item>m4v</item>
+        <item>mov</item>
+        <item>mkv</item>
+        <item>mp2</item>
+        <item>mp2v</item>
+        <item>mp4</item>
+        <item>mp4v</item>
+        <item>mpa</item>
+        <item>mpe</item>
+        <item>mpeg</item>
+        <item>mpeg1</item>
+        <item>mpeg2</item>
+        <item>mpeg4</item>
+        <item>mpg</item>
+        <item>mpv2</item>
+        <item>mtv</item>
+        <item>mxf</item>
+        <item>mxg</item>
+    </string-array>
+
+    <string-array name="audio_formats">
+        <item>3ga</item>
+        <item>669</item>
+        <item>a52</item>
+        <item>aac</item>
+        <item>ac3</item>
+        <item>adt</item>
+        <item>adts</item>
+        <item>aif</item>
+        <item>aifc</item>
+        <item>aiff</item>
+        <item>amr</item>
+        <item>aob</item>
+        <item>ape</item>
+        <item>awb</item>
+        <item>caf</item>
+        <item>cda</item>
+        <item>dts</item>
+        <item>flac</item>
+        <item>it</item>
+        <item>m4a</item>
+        <item>m4p</item>
+        <item>mid</item>
+        <item>mka</item>
+        <item>mlp</item>
+        <item>mod</item>
+        <item>mp1</item>
+        <item>mp2</item>
+        <item>mp3</item>
+        <item>mpc</item>
+        <item>mpga</item>
+        <item>oga</item>
+        <item>ogg</item>
+        <item>oma</item>
+        <item>opus</item>
+        <item>qcp</item>
+        <item>ra</item>
+        <item>rmi</item>
+        <item>s3m</item>
+        <item>spx</item>
+        <item>thd</item>
+        <item>tta</item>
+        <item>voc</item>
+        <item>vqf</item>
+        <item>w64</item>
+</string-array>
+
+</resources>

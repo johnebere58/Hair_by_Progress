@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <TextView
+        fontPath = "fonts/NirmalaB.ttf"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_order_details"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/info_holder"
+            >
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:background="@color/default_white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        >
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+
+            android:text="@string/total_price"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:alpha=".6"
+            />
+        <TextView
+
+            fontPath = "fonts/NirmalaB.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15sp"
+
+            android:text="N0"
+            android:textColor="@color/black"
+            android:padding="10dp"
+
+            android:id="@+id/price_tv"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

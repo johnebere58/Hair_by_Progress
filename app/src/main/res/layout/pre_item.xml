@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingPrefix"
+    android:background="@color/brown0"
+
+    >
+    <com.hairbyprogress.kenburnsview.KenBurnsView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/image_bells4"
+        android:scaleType="centerCrop"
+        android:id="@+id/sample"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/brown0"
+        android:alpha=".9"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+             <ImageView
+
+                 android:id="@+id/imv"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/plain_circle"
+                />
+
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/appname"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                fontPath = "fonts/NirmalaB.ttf"
+                android:gravity="center"
+                />
+            <TextView
+                android:alpha=".8"
+                android:id="@+id/title_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/the_best_place_to_buy_quality_hair_extensions"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                fontPath = "fonts/NirmalaB.ttf"
+               />
+
+            <TextView
+                android:visibility="gone"
+                android:alpha=".5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Grab the job, Get it done, Get paid"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+               />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

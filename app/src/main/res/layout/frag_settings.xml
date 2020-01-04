@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/edit_profile"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Edit your profile"
+                        android:textSize="17sp"
+                        fontPath="fonts/NirmalaB.ttf"
+                        />
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Change your username or avatar"
+                        android:textSize="12sp"
+                        android:alpha=".4"
+                        />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_next1"
+                    android:alpha=".3"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black"
+                android:alpha=".1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/share_story"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Share your story"
+                        android:textSize="17sp"
+                        fontPath="fonts/NirmalaB.ttf"
+                        />
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Receive various opinion from the community"
+                        android:textSize="12sp"
+                        android:alpha=".4"
+                        />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_next1"
+                    android:alpha=".3"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black"
+                android:alpha=".1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue0"
+                android:text="Account settings"
+                android:textSize="14sp"
+                fontPath="fonts/NirmalaB.ttf"
+                />
+            <LinearLayout
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <Switch
+                        android:id="@+id/code_switch"
+                        fontPath="fonts/NirmalaB.ttf"
+                        android:textSize="17sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4 Digit code"
+
+                        android:checked="true"
+                         />
+                    <TextView
+                        android:id="@+id/code_switch_tv"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Enabled"
+                        android:textSize="12sp"
+                        android:alpha=".4"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black"
+                android:alpha=".1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+            <LinearLayout
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <Switch
+                        android:id="@+id/stories_switch"
+                        fontPath="fonts/NirmalaB.ttf"
+                        android:textSize="17sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Public stories"
+                        android:checked="true"
+                         />
+                    <TextView
+                        android:id="@+id/stories_switch_tv"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="People can read all your stories from your profile"
+                        android:textSize="12sp"
+                        android:alpha=".4"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black"
+                android:alpha=".1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+            <LinearLayout
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <Switch
+                        android:id="@+id/chat_switch"
+                        fontPath="fonts/NirmalaB.ttf"
+                        android:textSize="17sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Private chat"
+                        android:checked="true"
+                         />
+                    <TextView
+                        android:id="@+id/chat_switch_tv"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="People can chat you privately"
+                        android:textSize="12sp"
+                        android:alpha=".4"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black"
+                android:alpha=".1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue0"
+                android:text="Notifications"
+                android:textSize="14sp"
+                fontPath="fonts/NirmalaB.ttf"
+                />
+            <LinearLayout
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <Switch
+                        android:id="@+id/notify_switch"
+                        fontPath="fonts/NirmalaB.ttf"
+                        android:textSize="17sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Push Notifications"
+
+                        android:checked="true"
+                        />
+                    <TextView
+                        android:id="@+id/notify_switch_tv"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Enabled"
+                        android:textSize="12sp"
+                        android:alpha=".4"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black"
+                android:alpha=".1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <LinearLayout
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:id="@+id/sub_cats"
+                >
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Subscribed Categories"
+                        android:textSize="17sp"
+                        fontPath="fonts/NirmalaB.ttf"
+                        />
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Categories you wish to be notified on"
+                        android:textSize="12sp"
+                        android:alpha=".4"
+                        />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_next1"
+                    android:alpha=".3"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black"
+                android:alpha=".1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue0"
+                android:text="About"
+                android:textSize="14sp"
+                fontPath="fonts/NirmalaB.ttf"
+                />
+
+            <LinearLayout
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:tag="0"
+                android:onClick="showInfo"
+                >
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="About Oinder"
+                        android:textSize="17sp"
+                        fontPath="fonts/NirmalaB.ttf"
+                        />
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Read all about Oinder"
+                        android:textSize="12sp"
+                        android:alpha=".4"
+                        />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_next1"
+                    android:alpha=".3"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black"
+                android:alpha=".1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <LinearLayout
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:onClick="shareApp"
+                >
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Share App"
+                        android:textSize="17sp"
+                        fontPath="fonts/NirmalaB.ttf"
+                        />
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Share the app with friends"
+                        android:textSize="12sp"
+                        android:alpha=".4"
+                        />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_next1"
+                    android:alpha=".3"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black"
+                android:alpha=".1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <LinearLayout
+                android:onClick="rateApp"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Rate"
+                        android:textSize="17sp"
+                        fontPath="fonts/NirmalaB.ttf"
+                        />
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Rate the App on Play Store"
+                        android:textSize="12sp"
+                        android:alpha=".4"
+                        />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_next1"
+                    android:alpha=".3"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black"
+                android:alpha=".1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+
+
+            <LinearLayout
+                android:onClick="checkUpdate"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="App update"
+                        android:textSize="17sp"
+                        fontPath="fonts/NirmalaB.ttf"
+                        />
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Check for update"
+                        android:textSize="12sp"
+                        android:alpha=".4"
+                        />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_next1"
+                    android:alpha=".3"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black"
+                android:alpha=".1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue0"
+                android:text="Other"
+                android:textSize="14sp"
+                fontPath="fonts/NirmalaB.ttf"
+                />
+
+            <LinearLayout
+                android:tag="2"
+                android:onClick="showInfo"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Privacy policy"
+                        android:textSize="17sp"
+                        fontPath="fonts/NirmalaB.ttf"
+                        />
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Read our privacy policy"
+                        android:textSize="12sp"
+                        android:alpha=".4"
+                        />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_next1"
+                    android:alpha=".3"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black"
+                android:alpha=".1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <LinearLayout
+                android:tag="1"
+                android:onClick="showInfo"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Terms and conditions"
+                        android:textSize="17sp"
+                        fontPath="fonts/NirmalaB.ttf"
+                        />
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Read our terms and conditions"
+                        android:textSize="12sp"
+                        android:alpha=".4"
+                        />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_next1"
+                    android:alpha=".3"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black"
+                android:alpha=".1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <LinearLayout
+                android:onClick="sendFeedBack"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Feedback"
+                        android:textSize="17sp"
+                        fontPath="fonts/NirmalaB.ttf"
+                        />
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Provide us with feedback to help us improve the app"
+                        android:textSize="12sp"
+                        android:alpha=".4"
+                        />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_next1"
+                    android:alpha=".3"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black"
+                android:alpha=".1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+           <LinearLayout
+               android:onClick="emailUs"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Help and support"
+                        android:textSize="17sp"
+                        fontPath="fonts/NirmalaB.ttf"
+                        />
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Ask us anytime for help and support"
+                        android:textSize="12sp"
+                        android:alpha=".4"
+                        />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_next1"
+                    android:alpha=".3"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black"
+                android:alpha=".1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+            <LinearLayout
+                android:onClick="logOut"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red0"
+                        android:text="Log out"
+                        android:textSize="17sp"
+                        fontPath="fonts/NirmalaB.ttf"
+                        />
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Ask us anytime for help and support"
+                        android:textSize="12sp"
+                        android:alpha=".4"
+                        />
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_next1"
+                    android:alpha=".3"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black"
+                android:alpha=".1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

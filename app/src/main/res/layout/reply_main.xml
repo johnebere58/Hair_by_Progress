@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/rootView"
+    >
+
+   <LinearLayout
+       android:background="@color/blue3"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+       <ImageView
+           android:background="?attr/selectableItemBackground"
+           android:clickable="true"
+           android:onClick="clickBack"
+           android:tint="@color/white"
+           android:src="@drawable/ic_back"
+           android:padding="15dp"
+           android:layout_width="50dp"
+           android:layout_height="50dp" />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="REPLIES"
+           android:textColor="@color/white"
+           android:textSize="17sp"
+           android:layout_gravity="center"
+           />
+
+
+   </LinearLayout>
+
+
+   <FrameLayout
+       android:layout_weight="1"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <android.support.v7.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:id="@+id/recyclerView"
+           />
+
+       <TextView
+           android:visibility="gone"
+           android:id="@+id/typing"
+           android:layout_width="match_parent"
+           android:layout_height="30dp"
+           android:gravity="center"
+           android:text="TYPING"
+           android:textColor="@color/white"
+           android:background="@color/red03"
+           />
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="4dp"
+           android:background="@drawable/gradient_line1"
+           android:alpha=".1"
+           />
+       <View
+           android:layout_gravity="bottom"
+           android:layout_width="match_parent"
+           android:layout_height="4dp"
+           android:background="@drawable/gradient_line"
+           android:alpha=".1"
+           />
+       <FrameLayout
+
+           android:visibility="gone"
+           android:id="@+id/sc_up"
+           android:alpha=".8"
+           android:layout_marginBottom="7dp"
+           android:layout_marginRight="15dp"
+           android:layout_marginTop="15dp"
+
+           android:layout_gravity="right"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <ImageView
+               android:layout_gravity="center"
+               android:layout_width="33dp"
+               android:layout_height="33dp"
+               android:src="@drawable/circle"
+               android:tint="@color/blue3"
+               />
+           <ImageView
+               android:layout_gravity="center"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:src="@drawable/shadow"
+               />
+           <ImageView
+               android:layout_gravity="center"
+               android:layout_width="15dp"
+               android:layout_height="15dp"
+               android:src="@drawable/scroll_up"
+               android:tint="@color/white"
+               />
+
+       </FrameLayout>
+       <FrameLayout
+           android:visibility="gone"
+           android:id="@+id/sc_down"
+           android:alpha=".8"
+           android:layout_marginRight="15dp"
+           android:layout_marginBottom="15dp"
+           android:layout_marginLeft="15dp"
+           android:layout_gravity="right|bottom"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <ImageView
+               android:layout_gravity="center"
+               android:layout_width="33dp"
+               android:layout_height="33dp"
+               android:src="@drawable/circle"
+               android:tint="@color/blue3"
+               />
+           <ImageView
+               android:layout_gravity="center"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:src="@drawable/shadow"
+               />
+           <ImageView
+               android:layout_gravity="center"
+               android:layout_width="15dp"
+               android:layout_height="15dp"
+               android:src="@drawable/scroll_down"
+               android:tint="@color/white"
+               />
+           <TextView
+               android:visibility="gone"
+               android:id="@+id/sc_down_tv"
+               android:layout_width="18dp"
+               android:layout_height="18dp"
+               android:gravity="center"
+               android:textColor="@color/white"
+               android:background="@drawable/circle_red_white_stroke"
+               android:text="7"
+               android:textSize="9sp"
+               />
+
+       </FrameLayout>
+
+
+
+
+   </FrameLayout>
+    <FrameLayout
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_gravity="bottom">
+
+
+            <ImageView
+
+                android:id="@+id/emojiBut"
+                android:src="@drawable/smiley"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:tint="@color/blue6"
+                android:padding="15dp"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                />
+
+
+            <com.vanniktech.emoji.EmojiEditText
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/main_etv"
+                android:background="@color/white"
+                android:hint="Type a Reply"
+                android:imeOptions="actionSend"
+                android:textSize="17sp"
+                android:maxLines="3"
+                android:layout_weight="1"
+                android:inputType="textCapSentences|textMultiLine" />
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/send"
+                android:src="@drawable/ic_send"
+                android:layout_gravity="bottom"
+                android:tint="@color/blue6"
+                android:padding="17dp"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                />
+        </LinearLayout>
+        <TextView
+
+            android:visibility="gone"
+            android:id="@+id/stop_typing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@color/black"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="This conversation has been closed"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:alpha=".9"
+            />
+    </FrameLayout>
+
+
+</LinearLayout>

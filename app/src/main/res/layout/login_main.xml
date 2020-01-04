@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/brown02"
+    android:fitsSystemWindows="true"
+    tools:ignore="MissingPrefix"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/login_small"
+        android:textColor="@color/white"
+        fontPath = "fonts/NirmalaB.ttf"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_email"
+                    android:textSize="12sp"
+                    android:alpha=".7"
+                    android:textColor="@color/white"
+                    />
+                <EditText
+                    android:id="@+id/email_etv"
+                    android:background="@color/transparent"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textSize="17sp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:inputType="textEmailAddress"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/white"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_password"
+                    android:textSize="12sp"
+                    android:alpha=".7"
+                    android:textColor="@color/white"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    >
+                    <EditText
+                        android:id="@+id/pass_etv"
+                        android:background="@color/transparent"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="17sp"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:inputType="textPassword"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:id="@+id/vis_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/show"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:alpha=".5"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/white"
+                    />
+
+            </LinearLayout>
+
+
+<TextView
+                android:id="@+id/forgot"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgot_password"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                fontPath = "fonts/NirmalaB.ttf"
+                android:clickable="true"
+                />
+
+            <FrameLayout
+
+                android:id="@+id/next"
+                style="?attr/buttonStyleSmall"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/curve_white"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    fontPath="fonts/NirmalaB.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/login_small"
+                    android:textColor="@color/brown0"
+                    android:textSize="18sp"
+
+                    />
+
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@color/white"
+    android:alpha=".5"
+    />
+    <TextView
+
+        android:id="@+id/signup_but"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/dont_have_an_account_signup_here"
+        android:textSize="14sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        fontPath = "fonts/NirmalaB.ttf"
+        android:clickable="true"
+        android:background="@color/brown0"
+        />
+
+</LinearLayout>

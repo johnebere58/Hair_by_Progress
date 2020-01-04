@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                >
+                <TextView
+                    android:padding="5dp"
+                    android:background="@color/brown0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 Items"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    fontPath = "fonts/NirmalaB.ttf"
+                    android:id="@+id/items_tv"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Total Payment"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    />
+                <LinearLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/total_tv"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="12,000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Delivery Fee"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    />
+                <LinearLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/d_fee_tv"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black"
+                android:alpha=".3"
+                />
+            <LinearLayout
+                android:background="@color/default_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Grand Total"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    />
+                <LinearLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/g_total_v"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="48,000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        fontPath = "fonts/NirmalaB.ttf"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black"
+                android:alpha=".3"
+                />
+
+            <TextView
+                android:background="@color/brown0"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="17sp"
+                android:text="Select Payment Option"
+                fontPath = "fonts/NirmalaB.ttf"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/pay_lay"
+                >
+
+
+            <LinearLayout
+                android:tag="0"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/black_stoke_button"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                >
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_brown07"
+                    android:tag="check"
+                    />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="Pay on Delivery"
+                    android:textColor="@color/brown03"
+                    fontPath = "fonts/NirmalaB.ttf"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:tag="1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/black_stoke_button"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                >
+                <ImageView
+                    android:tag="check"
+
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_brown07"
+                    />
+
+                <TextView
+                    fontPath="fonts/NirmalaB.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="10 Part Payment (N2,000)"
+                    android:textColor="@color/brown03"
+                    android:textSize="15sp"
+                    android:id="@+id/part_tv"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:tag="2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/black_stoke_button"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                >
+                <ImageView
+                    android:src="@drawable/ic_check"
+                    android:tag="check"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_brown07"
+
+                    />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="Full Payment"
+                    android:textColor="@color/brown03"
+                    fontPath = "fonts/NirmalaB.ttf"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

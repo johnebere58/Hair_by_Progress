@@ -1,0 +1,139 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:paddingRight="15dp"
+        android:id="@+id/main_layout"
+        android:clickable="true"
+        >
+
+        <FrameLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:layout_gravity="center"
+
+            >
+
+            <ImageView
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/letter_holder"
+               android:src="@drawable/circle"
+                android:tint="@color/orange0"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                />
+            <ImageView
+                android:visibility="gone"
+                android:alpha=".5"
+                android:padding="5dp"
+                android:background="@drawable/circle_black"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:tint="@color/white"
+                android:src="@drawable/ic_study"
+                />
+
+
+            <TextView
+                android:background="@drawable/circle"
+                android:id="@+id/letter_tv"
+                fontPath="fonts/NirmalaB.ttf"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="bottom"
+
+
+                android:gravity="center"
+                android:text="R"
+                android:textColor="@color/orange0"
+                android:textSize="17sp" />
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+            <TextView
+
+                fontPath="fonts/NirmalaB.ttf"
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Relationship"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="No Stories Yet"
+                android:textSize="12sp"
+                android:alpha=".5"
+                />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            >
+            <ImageView
+                android:id="@+id/next_back"
+                android:layout_gravity="center"
+                android:src="@drawable/circle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:tint="@color/orange0"
+
+                />
+            <ImageView
+
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/ic_next"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:tint="@color/white"
+
+                />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black"
+        android:alpha=".1"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        android:id="@+id/padding"
+        />
+</LinearLayout>

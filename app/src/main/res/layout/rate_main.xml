@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+        <TextView
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:alpha=".5"
+            fontPath="fonts/NirmalaB.ttf"
+
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            android:text="Your Reviews"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+
+            />
+
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/rating_bar"
+            android:progressTint="@color/red0"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight=".7"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WRITE A REVIEW"
+                android:textSize="12sp"
+                android:alpha=".7"
+                android:textColor="@color/brown0"
+                />
+            <EditText
+                android:id="@+id/review_etv"
+                android:background="@color/transparent"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="17sp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:inputType="textCapSentences"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/brown0"
+                />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/submit"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:layout_marginTop="20dp"
+            style="?attr/buttonStyleSmall"
+            android:background="@drawable/curve_brown"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            >
+
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUBMIT"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                fontPath = "fonts/NirmalaB.ttf"
+                />
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+</ScrollView>

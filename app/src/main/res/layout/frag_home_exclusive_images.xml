@@ -1,0 +1,25 @@
+<LinearLayout android:layout_width="130dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginRight="10dp"
+    android:layout_marginEnd="10dp"
+    >
+    <me.xiaopan.sketch.SketchImageView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:layout_gravity="bottom"
+        android:textColor="@color/black"
+        android:background="@color/default_white"
+        android:textSize="12sp"
+        android:text="HAIR BRUSH"
+        android:gravity="center"
+        />
+
+</LinearLayout>

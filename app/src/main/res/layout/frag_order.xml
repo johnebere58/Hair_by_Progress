@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingPrefix"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:background="@color/brown0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:text="My Order"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                fontPath = "fonts/NirmalaB.ttf"
+                android:gravity="center"
+                />
+            <TextView
+                android:visibility="gone"
+                android:background="@drawable/curve_white"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="The safest place to share your personal problems"
+                android:textColor="@color/gray_dark"
+                android:textSize="14sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:id="@+id/lay"
+                >
+                <FrameLayout
+
+                    android:tag="0"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+                    <TextView
+
+                        android:gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/my_order"
+                        android:background="@color/brown6"
+                        android:textColor="@color/white"
+                        android:padding="5dp"
+                        fontPath = "fonts/NirmalaB.ttf"
+                        />
+                </FrameLayout>
+
+                <FrameLayout
+
+                    android:tag="1"
+                    android:alpha=".4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        fontPath="fonts/NirmalaB.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/brown6"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/feedback"
+                        android:textColor="@color/white" />
+                </FrameLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.hairbyprogress.custom.CustomViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vp_order"
+        android:background="@color/blue09"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/gradient_line1"
+        android:alpha=".1"
+        />
+</FrameLayout>
+
+
+
+</LinearLayout>
